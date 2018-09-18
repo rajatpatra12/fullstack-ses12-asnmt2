@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home page</title>
+</head>
+<body id="body">
+    
+	<script type="text/javascript">
+	//Arr is the array
+    var Arr=[10, 8, 12, 36];
+    //using map function we are doubling the values and storing into doubleArr
+    var doubleArr=Arr.map(function(x){return 2*x});
+    //using filter we are filtering the array
+	var filterArr=doubleArr.filter(function(x){return x>20});
+	//using reduce we are adding the array datas
+    var sumArr=filterArr.reduce((a,b)=>{return a+b;},0);
+	</script>
+</body>
+</html>
